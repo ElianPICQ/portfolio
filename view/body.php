@@ -265,7 +265,7 @@
 				<div class="parcours-card-container">
 
 					<div class="parcours-card">
-						<a href="https://42.fr/" target="blank">
+						<a href="https://42.fr/" target="_blank">
 						<div class="parcours-card-head">
 							<h4><span class="txt-glow-light">42 - Paris</span></h4>
 							<div class="vertical-separator"></div>
@@ -281,7 +281,7 @@
 					</div>
 
 					<div class="parcours-card">
-						<a href="https://cfa-insta.fr/" target="blank">
+						<a href="https://cfa-insta.fr/" target="_blank">
 						<div class="parcours-card-head">
 							<h4><span class="txt-glow-light">CFA INSTA - Paris</span></h4>
 							<div class="vertical-separator"></div>
@@ -300,10 +300,10 @@
 						<div class="parcours-card-head">
 							<h4><span class="txt-glow-light">Openclassroom / W3S / ...</span></h4>
 							<div class="vertical-separator"></div>
-							<div class="double-logo" target="blank">
-								<a href="https://openclassrooms.com/fr/" target="blank"><img src="public/img/logo/logo-openclassrooms.svg" alt="logo openclassrooms" /></a>
+							<div class="double-logo">
+								<a href="https://openclassrooms.com/fr/" target="_blank"><img src="public/img/logo/logo-openclassrooms.svg" alt="logo openclassrooms" /></a>
 								<span class="txt-glow">/</span>
-								<a href="https://www.w3schools.com/" target="blank"><img src="public/img/logo/logo-w3s.svg" alt="logo w3school" /></a>
+								<a href="https://www.w3schools.com/" target="_blank"><img src="public/img/logo/logo-w3s.svg" alt="logo w3school" /></a>
 							</div>
 						</div>
 
@@ -337,7 +337,7 @@
 					</div>
 
 					<div class="parcours-card">
-						<a href="https://www.seedext.com/fr/accueil" target="blank">
+						<a href="https://www.seedext.com/fr/accueil" target="_blank">
 						<div class="parcours-card-head">
 							<h4>Seedext</h4>
 							<div class="vertical-separator"></div>
@@ -361,7 +361,7 @@
 		<div class="container">
 			<h2>Projets</h2>
 			<div id="project-card-container">
-				<a href="view/projet-orange.php" target="blank">
+				<a href="view/projet-orange.php" target="_blank">
 					<figure class="projet-card">
 						<img src="public/img/gestionDesPannes-orange.png" alt="Site Orange - Gestion des pannes" />
 						<div class="dark-filter"></div>
@@ -372,9 +372,9 @@
 					</figure>
 				</a>
 
-				<a href="view/sitepresentation.php" target="blank">
+				<a href="view/sitepresentation.php" target="_blank">
 					<figure class="projet-card">
-						<img src="public/img/gestionDesPannes-orange.png" alt="Site Orange - Gestion des pannes" />
+						<img src="public/img/bg_site-presa.png" alt="Site Orange - Gestion des pannes" />
 						<div class="dark-filter"></div>
 						<div class="projet-type"><span>Projet scolaire</span></div>
 						<figcaption>
@@ -383,9 +383,9 @@
 					</figure>
 				</a>
 
-				<a href="view/sitepresentationwordpress.php" target="blank">
+				<a href="view/sitepresentationwordpress.php" target="_blank">
 					<figure class="projet-card">
-						<img src="public/img/gestionDesPannes-orange.png" alt="Site Orange - Gestion des pannes" />
+						<img src="public/img/bg_site-presa-wp.png" alt="Site Orange - Gestion des pannes" />
 						<div class="dark-filter"></div>
 						<div class="projet-type"><span>Projet scolaire</span></div>
 						<figcaption>
@@ -394,7 +394,7 @@
 					</figure>
 				</a>
 
-				<a href="https://elianpicq.github.io/Prototype-2/" target="blank">
+				<a href="https://elianpicq.github.io/Prototype-2/" target="_blank">
 					<figure class="projet-card">
 						<img src="public/img/site-perso-front.png" alt="Site Orange - Gestion des pannes" />
 						<div class="dark-filter"></div>
@@ -449,7 +449,7 @@
 		<div class="container">
 			<h2>Contact</h2>
 			<p class="send-me-msg txt-glow mb-45">Envoyez moi un message !</p>
-			<form method="post" action="send_email.php">
+			<form method="post" action="">
 				<div class="form-top">
 					<input type="text" name="name" id="" placeholder="Votre nom" class="form-input" />
 					
@@ -461,6 +461,8 @@
 
 				<button type="submit" name="send" value="submit" class="shiny-btn">Envoyer</button>
 			</form>
+			<p class="contact-info">picq.elian@gmail.com</p>
+			<p class="contact-info">06.80.47.29.74</p>
 		</div>
 	</section>
 </main>

@@ -31,6 +31,7 @@
 			<li><a href="../index.php#parcours"><i class="fa-solid fa-route"></i>Parcours</a></li>
 			<li><a href="../index.php#projet"><i class="fa-solid fa-diagram-project"></i>Projets</a></li>
 			<li><a href="../index.php#veille"><i class="fa-solid fa-server"></i>Veille</a></li>
+			<li><a href="../view/epreuvee4.php"><i class="fa-solid fa-server"></i>Epreuve E4</a></li>
 			<li><a href="../index.php#contact	"><i class="fa-solid fa-envelope"></i>Contact</a></li>
 		</ul>
 	</nav>
@@ -43,14 +44,27 @@
 	<div id="header-separator"></div>
 </header>
 
-<main class="main client-leger">
-	<h2>Projet Scolaire - Site de Présentation</h2>
+<main class="main other-main">
+	<div class="container">
+		<h2>Projet Scolaire - Site de Présentation</h2>
+		<div>
+			<p class="mb-25">
+				Création d'un site web ayant pour but de présenter l'école (CFA INSTA) et les membres du groupe dont je fais parti.
+			</p>
 
-	<iframe
-      src="../public/document/ppt_sitePresentation.pdf"
-      width="707px"
-      height="1000px"
-  ></iframe>
+			<ul class="mb-45">
+				<li>Projet scolaire</li>
+				<li>Travail de groupe</li>
+				<li>Gestion de projet</li>
+				<li>Développement web</li>
+			</ul>
+		</div>
+		<iframe
+	      src="../public/document/ppt_sitePresentation.pdf"
+	      width="849px"
+	      height="1200px"
+	  ></iframe>
+	</div>
 </main>
 
 <footer>

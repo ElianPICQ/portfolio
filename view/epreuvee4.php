@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="UTF-8" />
-	<title>Elian PICQ | Site de présentation Wordpress</title>
+	<title>Elian PICQ | Projet Orange</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -46,21 +46,13 @@
 
 <main class="main other-main">
 	<div class="container">
-		<h2>Projet Scolaire - Site de Présentation Wordpress</h2>
-		<div>
-			<p class="mb-25">
-				Création d'un site web ayant pour but de présenter l'école (CFA INSTA) et les membres du groupe dont je fais parti avec le CMS WordPress.
-			</p>
+		<h2>Epreuve E4</h2>
+		<p>L’épreuve E4 est une épreuve clef du BTS SIO, elle doit être composée de minimun deux projets ayant un contexte commun en rapport avec l’option choisie (SLAM pour mon cas). </p>
+		<p> L’objectif de cette épreuve est d’évaluer le candidat sur une des deux situations professionnelles qu’il aura réalisées sur les 2 ans de formation.</p>
+		<p class="mb-45"> Cette épreuve est aussi accompagnée d'un tableau des compétences, compétences qui devront être décrites et réalisées au cours des projets présentés. </p>
 
-			<ul class="mb-45">
-				<li>Projet scolaire</li>
-				<li>Travail de groupe</li>
-				<li>Gestion de projet</li>
-				<li>CMS</li>
-			</ul>
-		</div>
 		<iframe
-	      src="../public/document/pptSiteWordpress.pdf"
+	      src="../public/document/tableau_synthese.pdf"
 	      width="849px"
 	      height="1200px"
 	  ></iframe>

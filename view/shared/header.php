@@ -31,7 +31,8 @@
 			<li><a href="#parcours"><i class="fa-solid fa-route"></i>Parcours</a></li>
 			<li><a href="#projet"><i class="fa-solid fa-diagram-project"></i>Projets</a></li>
 			<li><a href="#veille"><i class="fa-solid fa-server"></i>Veille</a></li>
-			<li><a href="#contact	"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+			<li><a href="view/epreuvee4.php" target=_blank><i class="fa-solid fa-server"></i>Epreuve E4</a></li>
+			<li><a href="#contact"><i class="fa-solid fa-envelope"></i>Contact</a></li>
 		</ul>
 	</nav>
 

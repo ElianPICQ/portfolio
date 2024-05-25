@@ -13,6 +13,11 @@
   src: url("../font/coolvetica/coolvetica rg.otf");
 }
 
+@font-face {
+  font-family: "open-sans";
+  src: url("../font/open-sans/OpenSans-Regular.ttf");
+}
+
 :root {
   --color: #fff;
   --animation-speed: 2s;
@@ -21,11 +26,12 @@
 
 html * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 html {
-  font-family: "beckman";
+  font-family: "open-sans";
   scroll-behavior: smooth;
 }
 /*
@@ -81,6 +87,8 @@ html {
   z-index: 999;
   background-color: rgb(49, 42, 70);
   background-image: url("../img/scanlines.png");
+
+  font-family: "beckman";
 }
 
 #header-top-info {
@@ -425,6 +433,18 @@ html {
 /************************************/
 /************************************/
 
+h2, h3 {
+  font-family: "beckman";
+}
+
+main > section:nth-child(even) {
+    background: linear-gradient(rgb(36,31,52) 10%, rgb(23, 19, 34) 90%, rgb(36,31,52));
+}
+
+main > section:nth-child(odd) {
+  background: linear-gradient(rgb(36,31,52) 10%, rgb(49,42,70) 90%, rgb(36,31,52));
+}
+
 .section {
   display: flex;
   justify-content: center;
@@ -521,15 +541,186 @@ html {
   margin-bottom: 45px;
 }
 
+
+
+
+
+/************************************/
+/************************************/
+/********* PAGE A PROPOS ************/
+/************************************/
+/************************************/
+
+#about-me-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+.shiny-btn {
+  width: fit-content;
+  margin-bottom: 45px;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 100px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 1.2em;
+  line-height: 1em;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+}
+
+.shiny-btn:active,
+.shiny-btn:hover {
+  outline: 0;
+}
+
+.shiny-btn span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 100px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.shiny-btn:hover span {
+  background: none;
+}
+
+#skills-container h4 {
+  font-size: 1.3em;
+  margin-bottom: 35px;
+}
+
+.skill-carousel {
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+  margin-bottom: 30px;
+  left: 1px;
+  right: 0;
+}
+
+.skill-carousel::before, .skill-carousel::after {
+  position: absolute;
+  height: 100%;
+  width: 7%;
+  top: -5px;
+  z-index: 999;
+  content: "";
+}
+
+.skill-carousel::before {
+  left: 0;
+  background: linear-gradient(to right, #191424 0%, transparent 100%);
+}
+
+.skill-carousel::after {
+  right: 0;
+  background: linear-gradient(to left, #191424 0%, transparent 100%);
+}
+
+.skill-carousel:hover .card-container {
+  animation-play-state: paused;
+}
+
+.card-container {
+  display: inline-block;
+
+  animation: 15s slide-carousel infinite linear;
+}
+
+#tools-title {
+  margin-top: 275px;
+}
+
+.skill-card {
+  display: inline-block;
+  width: fit-content;
+  padding: 15px 25px;
+  margin: 0 40px;
+  background-color: rgb(23, 19, 34);
+  border-radius: 10px;
+  border: 2px solid rgb(49,42,70);
+  transition: all 0.3s linear;
+}
+
+.skill-img img {
+  transition: all 0.3s linear;
+  height: 100px;
+  width: 105px;
+}
+
+.skill-card-separator {
+  transition: all 0.3s linear;
+  width: 100%;
+  height: 1px;
+  margin: 10px 0;
+
+  background-color: rgb(150, 150, 150);
+}
+
+.skill-img p {
+  transition: all 0.3s linear;
+}
+
+.skill-name {
+  transition: all 0.3s linear;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.skill-card:hover {
+  transition: all 0.3s linear;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: scale(1.1);
+  border-color: rgb(23, 19, 34);
+}
+
+.skill-card:hover .black-filter {
+  transition: all 0.3s linear;
+  filter: brightness(0);
+}
+
+.skill-card:hover img {
+  transition: all 0.3s linear;
+  transform: scale(0.8);
+}
+
+.skill-card:hover p {
+  transition: all 0.3s linear;
+  color: #333;
+}
+
+.skill-card:hover .skill-card-separator {
+  transition: all 0.3s linear;
+  color: #222;
+}
+
+
+@keyframes slide-carousel {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
 /************************************/
 /************************************/
 /***********  PAGE BTS  *************/
 /************************************/
 /************************************/
-
-#bts {
-  background: linear-gradient(rgb(36,31,52) 10%, rgb(23, 19, 34) 90%, rgb(36,31,52));
-}
 
 .container {
   max-width: 1200px;
@@ -637,132 +828,11 @@ html {
 
 
 
-
-/************************************/
-/************************************/
-/********* PAGE A PROPOS ************/
-/************************************/
-/************************************/
-
-#about-me {
-  background: linear-gradient(rgb(36,31,52) 10%, rgb(49,42,70) 90%, rgb(36,31,52));
-}
-
-.shiny-btn {
-  width: fit-content;
-  margin-bottom: 45px;
-  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
-  border: 0;
-  border-radius: 100px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-  color: #FFFFFF;
-  display: flex;
-  font-size: 1.2em;
-  line-height: 1em;
-  padding: 3px;
-  text-decoration: none;
-  user-select: none;
-}
-
-.shiny-btn:active,
-.shiny-btn:hover {
-  outline: 0;
-}
-
-.shiny-btn span {
-  background-color: rgb(5, 6, 45);
-  padding: 16px 24px;
-  border-radius: 100px;
-  width: 100%;
-  height: 100%;
-  transition: 300ms;
-}
-
-.shiny-btn:hover span {
-  background: none;
-}
-
-#skills-container h4 {
-  font-size: 1.3em;
-  margin-bottom: 35px;
-}
-
-.card-container {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(6, 1fr);
-  margin-bottom: 45px;
-}
-
-.skill-card {
-  width: fit-content;
-  padding: 15px 25px;
-  background-color: rgb(23, 19, 34);
-  border-radius: 10px;
-  transition: all 0.3s linear;
-}
-
-.skill-img img {
-  transition: all 0.3s linear;
-  height: 100px;
-}
-
-.skill-card-separator {
-  transition: all 0.3s linear;
-  width: 100%;
-  height: 1px;
-  margin: 10px 0;
-
-  background-color: rgb(150, 150, 150);
-}
-
-.skill-img p {
-  transition: all 0.3s linear;
-}
-
-.skill-name {
-  transition: all 0.3s linear;
-  font-size: 1.1em;
-  text-align: center;
-}
-
-.skill-card:hover {
-  transition: all 0.3s linear;
-  background-color: rgb(255, 255, 255);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  transform: scale(1.1);
-}
-
-.skill-card:hover .black-filter {
-  transition: all 0.3s linear;
-  filter: brightness(0);
-}
-
-.skill-card:hover img {
-  transition: all 0.3s linear;
-  transform: scale(0.8);
-}
-
-.skill-card:hover p {
-  transition: all 0.3s linear;
-  color: #333;
-}
-
-.skill-card:hover .skill-card-separator {
-  transition: all 0.3s linear;
-  color: #222;
-}
-
-
 /************************************/
 /************************************/
 /********  PAGE PARCOURS  ***********/
 /************************************/
 /************************************/
-
-#parcours {
-  background: linear-gradient(rgb(36,31,52) 10%, rgb(23, 19, 34) 90%, rgb(36,31,52));
-}
 
 .parcours-card-container {
   display: grid;
@@ -774,10 +844,9 @@ html {
 .parcours-card {
   width: 30%;
   min-width: 375px;
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-  background-color: rgb(49,42,70);
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(13, 10, 23);
   border-radius: 10px;
   padding: 10px 15px;
   transition: all 0.3s linear;
@@ -827,6 +896,7 @@ justify-content: space-around;
 
 .parcours-card p {
   text-align: center;
+  margin: auto;
 }
 
 .parcours-card:hover {
@@ -841,10 +911,6 @@ justify-content: space-around;
 /*********  PAGE PROJETS  ***********/
 /************************************/
 /************************************/
-
-#projet {
-  background: linear-gradient(rgb(36,31,52) 10%, rgb(49,42,70) 90%, rgb(36,31,52));
-}
 
 #projet > div {
   width: 100%;
@@ -865,8 +931,14 @@ justify-content: space-around;
   color: #fff;
 }
 
+.projet-card-link {
+  display: block;
+  height: 210px;
+}
+
 #projet img {
   width: 100%;
+  height: 100%;
   display: block;
   object-fit: cover;
   border-radius: 10px;
@@ -874,6 +946,7 @@ justify-content: space-around;
 
 #projet figure {
   position: relative;
+  height: 100%;
   border-radius: 10px;
 }
 
@@ -924,10 +997,6 @@ justify-content: space-around;
 /************************************/
 /************************************/
 
-#veille {
-  background: linear-gradient(rgb(36,31,52) 10%, rgb(23, 19, 34) 90%, rgb(36,31,52));
-}
-
 .veille-card-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -942,7 +1011,7 @@ justify-content: space-around;
   align-items: center;
   padding: 10px 15px;
   background-color: rgb(49,42,70);
-  border-radius: 100px 100px 10px 10px;
+  border-radius: 10px;
   transition: all 0.2s linear;
 }
 
@@ -967,6 +1036,12 @@ justify-content: space-around;
   margin: auto;
 }
 
+.veille-tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .veille-card a {
   color: #fff;
   text-decoration: none;
@@ -984,13 +1059,19 @@ justify-content: space-around;
 /************************************/
 /************************************/
 
-#contact {
-  background: linear-gradient(rgb(36,31,52) 10%, rgb(49,42,70 ) 90%, rgb(36,31,52));
+#contact .container {
+  width: 100%;
+}
+
+#contact h2 {
+  margin-bottom: 35px;
 }
 
 .send-me-msg {
   font-size: 2em;
 }
+
+/* SEND MAIL FORM TODO
 
 .form-top {
   display: flex;
@@ -1018,9 +1099,27 @@ justify-content: space-around;
 #contact button {
   padding: 10px 25px;
 }
+*/
 
-.contact-info {
+#contact-infos-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info-title {
+  font-size: 1.3em;
+  text-decoration: underline;
+}
+
+.contact-infos {
   font-size: 1.2em;
+
+  font-family: "beckman";
+}
+
+.contact-infos i {
+  margin-right: 15px;
+  color: rgb(156, 129, 234);
 }
 
 

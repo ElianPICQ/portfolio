@@ -12,7 +12,7 @@
 <div id="fullpage">
 <header id="header">
 	<div id="header-top-info">
-		<h1 class="neon-text"><a href="index.html#home">Elian PICK</a></h1>
+		<h1 class="neon-text"><a href="#home">Elian PICQ</a></h1>
 		<div id="social-links">
 			<a href="https://github.com/ElianPICQ" alt="github" class="social-link-github social-link-icon" target="blank">
 				<i class="fa-brands fa-github"></i>
@@ -26,12 +26,12 @@
 	<nav id="nav-bar">
 		<ul>
 			<li><a href="#home"><i class="fa-solid fa-house"></i>Accueil</a></li>
-			<li><a href="#bts"><i class="fa-solid fa-graduation-cap"></i>BTS</a></li>
 			<li><a href="#about-me"><i class="fa-solid fa-user"></i>A Propos</a></li>
+			<li><a href="#bts"><i class="fa-solid fa-graduation-cap"></i>BTS</a></li>
 			<li><a href="#parcours"><i class="fa-solid fa-route"></i>Parcours</a></li>
 			<li><a href="#projet"><i class="fa-solid fa-diagram-project"></i>Projets</a></li>
 			<li><a href="#veille"><i class="fa-solid fa-server"></i>Veille</a></li>
-			<li><a href="pages/epreuvee4.html" target=_blank><i class="fa-solid fa-server"></i>Epreuve E4</a></li>
+			<li><a href="pages/epreuvee4.html"><i class="fa-solid fa-server"></i>Epreuve E4</a></li>
 			<li><a href="#contact"><i class="fa-solid fa-envelope"></i>Contact</a></li>
 		</ul>
 	</nav>
@@ -85,46 +85,21 @@
 		<a href="#bts" id="home-scroll"></a>
 	</section>
 
-	<section id="bts" class="section">
-		<div class="container">
-			<h2>Qu'est ce que le <strong>BTS SIO</strong> ?</h2>
-			<p class="mb-35">
-				le Brevet de Technicien Supérieur - Services Informatiques aux Organisations (<strong>BTS SIO</strong>) forme les étudiants à la mise en place de solutions informatiques au sein des entreprises. Il comprend 2 options:
-			</p>
-			<ul class="mb-45">
-				<li>Option SLAM : Solutions Logicielles et Application Métiers</li>
-				<li>Option SISR : Solutions d'Infrastructures, Systèmes et Réseaux</li>
-			</ul>
-			<div id="bts-options-container">
-				<div>
-					<div id="ma-filiere"><i>Ma filière</i></div>
-					<h3>Option SLAM<i class="fa-solid fa-code bts-option-icon"></i></h3>
-					<p>
-						L'étudiant participera à la conception, au développement, ainsi qu'au déploiement et à la maintenance des composants logiciels d'une solution applicative. Il va ainsi acquérir des compétences en conception et développement d'une solution applicative, en maintenance de celle-ci, mais aussi en bases de données et en gestion des données numériques.
-					</p>
-				</div>
-				<div>
-					<h3>Option SISR<i class="fa-solid fa-network-wired bts-option-icon"></i></h3>
-					<p>
-						L'étudiant participera à l'administration des systèmes et du réseau, sera capable de modifier ou d'adapter les solutions d'infrastructure ainsi que la qualité de service des équipements des réseaux. Il va ainsi acquérir les compétences pour concevoir une solution d'infrastructure réseau, l'installer, la tester et la déployer. Il apprendra aussi à administrer et superviser ce réseau.
-					</p>
-				</div>
-			</div>
-
-			<p class="note-text">Le BTS SIO est un diplôme bac+2 de niveau 5 au RNCP, qui délivre 120 crédits ECTS et permet la poursuite d’études si vous le souhaitez.</p>
-		</div>
-	</section>
-
 	<section id="about-me" class="section">
 		<div class="container">
 			<h2>A Propos</h2>
-			<p class="mb-35">Bonjour, moi c'est Elian PICQ. Je suis actuellement en 2nd année d'un BTS SIO option SLAM.</p>
-			<a href="public/document/CV_PICQElian.pdf" download="public/document/CV_PICQElian.pdf" class="shiny-btn" class="_blank"><span>Téléchargez mon CV !</span></a>
+			
+			<div id="about-me-header">
+				<p class="mb-35">Bonjour, moi c'est Elian PICQ. Je suis actuellement en 2nd année d'un BTS SIO option SLAM.</p>
+				<p class="mb-45">Laissez moi vous présenter mon portfolio dans lequel vous trouverez mes expériences professionelles ainsi que quelques projets que j'ai pû réaliser.</p>
+
+				<a href="public/document/CV_PICQElian.pdf" download="public/document/CV_PICQElian.pdf" class="shiny-btn" class="_blank"><span>Téléchargez mon CV !</span></a>
+			</div>
 			<div id="skills-container">
 				<h3>Compétences</h3>
-				<div class="mb-35">
-					<h4>Langages</h4>
-					
+				<h4 class="txt-glow-light">Langages</h4>
+				
+				<div class="skill-carousel">
 					<div class="card-container">
 						<div class="skill-card">
 							<div class="skill-img">
@@ -224,12 +199,135 @@
 						
 						<div class="skill-card">
 							<div class="skill-img">
-								<img src="public/img/logo/logo-sql.svg" alt="sql logo" />
+								<img src="public/img/logo/logo-mysql.svg" alt="sql logo" />
 							</div>
 							<div class="skill-card-separator"></div>
 							<div class="skill-name">
 								<p>
-									SQL
+									mySQL
+								</p>
+							</div>
+						</div>
+						
+						<div class="skill-card">
+							<div class="skill-img">
+								<img src="public/img/logo/logo-gnu_bash.svg" alt="bash unix logo" class="black-filter" />
+							</div>
+							<div class="skill-card-separator"></div>
+							<div class="skill-name">
+								<p>
+									BASH UNIX
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Dédoublé pour donner l'impression du défilement infini -->
+					<div class="card-container">
+						<div class="skill-card">
+							<div class="skill-img">
+								<img src="public/img/logo/logo-html.svg" alt="html5" />
+							</div>
+							<div class="skill-card-separator"></div>
+							<div class="skill-name">
+								<p>
+									HTML
+								</p>
+							</div>
+						</div>
+
+						<div class="skill-card">
+							<div class="skill-img">
+								<img src="public/img/logo/logo-css.svg" alt="css logo" />
+							</div>
+							<div class="skill-card-separator"></div>
+							<div class="skill-name">
+								<p>
+									CSS
+								</p>
+							</div>
+						</div>
+
+						<div class="skill-card">
+							<div class="skill-img">
+								<img src="public/img/logo/logo-javascript.svg" alt="javascript logo" />
+							</div>
+							<div class="skill-card-separator"></div>
+							<div class="skill-name">
+								<p>
+									JAVASCRIPT
+								</p>
+							</div>
+						</div>
+
+						<div class="skill-card">
+							<div class="skill-img">
+								<img src="public/img/logo/logo-php.svg" alt="php logo" />
+							</div>
+							<div class="skill-card-separator"></div>
+							<div class="skill-name">
+								<p>
+									PHP
+								</p>
+							</div>
+						</div>
+
+						<div class="skill-card">
+							<div class="skill-img">
+								<img src="public/img/logo/logo-java.svg" alt="java logo" />
+							</div>
+							<div class="skill-card-separator"></div>
+							<div class="skill-name">
+								<p>
+									JAVA
+								</p>
+							</div>
+						</div>
+
+						<div class="skill-card">
+							<div class="skill-img">
+								<img src="public/img/logo/logo-c.svg" alt="c logo" />
+							</div>
+							<div class="skill-card-separator"></div>
+							<div class="skill-name">
+								<p>
+									C
+								</p>
+							</div>
+						</div>
+
+						<div class="skill-card">
+							<div class="skill-img">
+								<img src="public/img/logo/logo-python.svg" alt="python logo" />
+							</div>
+							<div class="skill-card-separator"></div>
+							<div class="skill-name">
+								<p>
+									PYTHON
+								</p>
+							</div>
+						</div>
+
+						<div class="skill-card">
+							<div class="skill-img">
+								<img src="public/img/logo/logo-react.svg" alt="react logo" />
+							</div>
+							<div class="skill-card-separator"></div>
+							<div class="skill-name">
+								<p>
+									REACT
+								</p>
+							</div>
+						</div>
+						
+						<div class="skill-card">
+							<div class="skill-img">
+								<img src="public/img/logo/logo-mysql.svg" alt="sql logo" />
+							</div>
+							<div class="skill-card-separator"></div>
+							<div class="skill-name">
+								<p>
+									mySQL
 								</p>
 							</div>
 						</div>
@@ -247,9 +345,11 @@
 						</div>
 					</div>
 				</div>
-				<div>
-					<h4>Outils</h4>
-					<div class="card-container">
+
+				<h4 class="txt-glow-light" id="tools-title">Outils</h4>
+
+				<div class="tools-carousel">
+					<div class="">
 						<div class="skill-card">
 							<div class="skill-img">
 								<img src="public/img/logo/logo-github.svg" alt="github logo" />
@@ -297,6 +397,36 @@
 					</div>
 				</div>
 			</div>
+		</div>
+	</section>
+
+	<section id="bts" class="section">
+		<div class="container">
+			<h2>Qu'est ce que le <strong>BTS SIO</strong> ?</h2>
+			<p class="mb-35">
+				le Brevet de Technicien Supérieur - Services Informatiques aux Organisations (<strong>BTS SIO</strong>) forme les étudiants à la mise en place de solutions informatiques au sein des entreprises. Il comprend 2 options:
+			</p>
+			<ul class="mb-45">
+				<li>Option SLAM : Solutions Logicielles et Application Métiers</li>
+				<li>Option SISR : Solutions d'Infrastructures, Systèmes et Réseaux</li>
+			</ul>
+			<div id="bts-options-container">
+				<div>
+					<div id="ma-filiere"><i>Ma filière</i></div>
+					<h3>Option SLAM<i class="fa-solid fa-code bts-option-icon"></i></h3>
+					<p>
+						L'étudiant participera à la conception, au développement, ainsi qu'au déploiement et à la maintenance des composants logiciels d'une solution applicative. Il va ainsi acquérir des compétences en conception et développement d'une solution applicative, en maintenance de celle-ci, mais aussi en bases de données et en gestion des données numériques.
+					</p>
+				</div>
+				<div>
+					<h3>Option SISR<i class="fa-solid fa-network-wired bts-option-icon"></i></h3>
+					<p>
+						L'étudiant participera à l'administration des systèmes et du réseau, sera capable de modifier ou d'adapter les solutions d'infrastructure ainsi que la qualité de service des équipements des réseaux. Il va ainsi acquérir les compétences pour concevoir une solution d'infrastructure réseau, l'installer, la tester et la déployer. Il apprendra aussi à administrer et superviser ce réseau.
+					</p>
+				</div>
+			</div>
+
+			<p class="note-text">Le BTS SIO est un diplôme bac+2 de niveau 5 au RNCP, qui délivre 120 crédits ECTS et permet la poursuite d’études si vous le souhaitez.</p>
 		</div>
 	</section>
 
@@ -356,7 +486,7 @@
 						<div class="skill-card-separator"></div>
 						
 						<p>
-							En parallèle de mes formations, j'apprends continuellement de nouvelles technologies et consolide mes bases grâces aux tutoriels disponibles sur Internet.
+							En parallèle de mes formations, j'apprends continuellement grâces aux cours disponibles sur Internet.
 						</p>
 					</div>
 				</div>
@@ -394,7 +524,7 @@
 						<div class="skill-card-separator"></div>
 						
 						<p>
-							Pendant la 1ere année de mon BTS SIO SLAM, j'ai pû intégrer l'entreprise Seedext en tant que développeur web apprenti. Mon travail consistait à adapter des designs sur le logiciel figma, ou encore de coder une version d'essai du site Seedext en reactjs.
+							Pendant la 1ere année de mon BTS SIO SLAM, j'ai pû intégrer l'entreprise Seedext en tant que développeur web apprenti. Mon travail consistait à adapter des designs sur le logiciel figma, mais aussi de coder une version d'essai du site Seedext en reactjs.
 						</p>
 					</div>
 				</div>
@@ -407,7 +537,7 @@
 		<div class="container">
 			<h2>Projets</h2>
 			<div id="project-card-container">
-				<a href="pages/projet-orange.html" target="_blank">
+				<a href="pages/projet-orange.html" target="_blank" class="projet-card-link">
 					<figure class="projet-card">
 						<img src="public/img/gestionDesPannes-orange.png" alt="Site Orange - Gestion des pannes" />
 						<div class="dark-filter"></div>
@@ -418,7 +548,7 @@
 					</figure>
 				</a>
 
-				<a href="pages/sitepresentation.html" target="_blank">
+				<a href="pages/sitepresentation.html" target="_blank" class="projet-card-link">
 					<figure class="projet-card">
 						<img src="public/img/bg_site-presa.png" alt="Site Orange - Gestion des pannes" />
 						<div class="dark-filter"></div>
@@ -429,7 +559,7 @@
 					</figure>
 				</a>
 
-				<a href="pages/sitepresentationwordpress.html" target="_blank">
+				<a href="pages/sitepresentationwordpress.html" target="_blank" class="projet-card-link">
 					<figure class="projet-card">
 						<img src="public/img/bg_site-presa-wp.png" alt="Site Orange - Gestion des pannes" />
 						<div class="dark-filter"></div>
@@ -440,7 +570,7 @@
 					</figure>
 				</a>
 
-				<a href="https://elianpicq.github.io/Prototype-2/" target="_blank">
+				<a href="https://elianpicq.github.io/Prototype-2/" target="_blank" class="projet-card-link">
 					<figure class="projet-card">
 						<img src="public/img/site-perso-front.png" alt="Site Orange - Gestion des pannes" />
 						<div class="dark-filter"></div>
@@ -460,7 +590,7 @@
 
 			<h3>Qu'est-ce qu'une veille technologique ?</h3>
 			<p class="mb-35">
-				La veille technologique, élément de la veille stratégique, consiste à surveiller les évolutions techniques, les innovations dans un secteur d’activité donnée. La veille technologique comprend notamment la surveillance, la collecte, le partage et la diffusion d’information permettant d’anticiper ou de s’informer sur des changements en matière de recherche, développement, brevet, lancement de nouveaux produits, matériaux, processus, concepts, innovation de fabrication, etc…. Cela a pour but d’évaluer l’impact sur l’environnement et l’organisation.
+				La veille technologique, élément de la veille stratégique, consiste à surveiller les évolutions techniques, les innovations dans un secteur d’activité donnée. La veille technologique comprend notamment la surveillance, la collecte, le partage et la diffusion d’information permettant d’anticiper ou de s’informer sur des changements en matière de recherche, développement, brevet, lancement de nouveaux produits, matériels, processus, concepts, innovation de fabrication, etc…
 			</p>
 
 			<h3>Sujet de ma veille</h3>
@@ -471,8 +601,10 @@
 			<h3>Outils utilisés</h3>
 			<div class="veille-card-container">
 				<div class="veille-card">
-					<img src="public/img/logo/logo-feedly.svg" alt="feedly logo" />
-					<h4>Feedly</h4>
+					<a href="https://feedly.com/" target="_blank" class="veille-tool">
+						<img src="public/img/logo/logo-feedly.svg" alt="feedly logo" />
+						<h4>Feedly</h4>
+					</a>
 					<div class="skill-card-separator"></div>
 					<p>
 						Feedly est un outil qui permet de s’abonner à des flux RSS et de recevoir automatiquement des contenus provenant d’autres sites web, qu’il s’agisse d’un journal ou d’un article de blog. Ainsi, je peux centraliser les articles concernant les sujets qui m'intéressent.
@@ -480,8 +612,10 @@
 				</div>
 				
 				<div class="veille-card">
-					<img src="public/img/logo/logo-youtube.svg" alt="youtube logo" />
-					<h4>Youtube</h4>
+					<a href="https://youtube.com/" target="_blank" class="veille-tool">
+						<img src="public/img/logo/logo-youtube.svg" alt="youtube logo" />
+						<h4>Youtube</h4>
+					</a>
 					<div class="skill-card-separator"></div>
 					<p>
 						Youtube permet la diffusion et le partage de vidéos sur internet. Ainsi, de nombreuses chaines Youtube dédiées à l'informatique ont vu le jour. Parmis celles que je suis, je pourrais vous citer <a href="https://www.youtube.com/@Computerphile" class="txt-glow" target="_blank">Computerphile</a> ou encore <a href="https://www.youtube.com/@TheCodingTrain" class="txt-glow" target="_blank">The Coding train</a>.
@@ -495,6 +629,8 @@
 		<div class="container">
 			<h2>Contact</h2>
 			<p class="send-me-msg txt-glow mb-45">Envoyez moi un message !</p>
+
+<!--
 			<form method="post" action="">
 				<div class="form-top">
 					<input type="text" name="name" id="" placeholder="Votre nom" class="form-input" />
@@ -507,8 +643,17 @@
 
 				<button type="submit" name="send" value="submit" class="shiny-btn">Envoyer</button>
 			</form>
-			<p class="contact-info">picq.elian@gmail.com</p>
-			<p class="contact-info">06.80.47.29.74</p>
+-->
+			<div id="contact-infos-container">
+				<div class="contact-infos">
+					<p class="info-title">Par Mail</p>
+					<p class="contact-info"><i class="fa-solid fa-envelope"></i>picq.elian@gmail.com</p>
+				</div>
+				<div class="contact-infos">
+					<p class="info-title">Ou par téléphone</p>
+					<p class="contact-info"><i class="fa-solid fa-mobile"></i>06.80.47.29.74</p>
+				</div>
+			</div>
 		</div>
 	</section>
 </main>
@@ -519,6 +664,6 @@
 
 </footer>
 </div>
- <script src="../../public/script/scripts.js"></script> 
+ <script src="public/script/scripts.js"></script> 
 </body>
 </html>

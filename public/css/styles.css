@@ -454,7 +454,7 @@ main > section:nth-child(odd) {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1115px;
   margin: 0 80px;
 }
 
@@ -529,8 +529,12 @@ main > section:nth-child(odd) {
   font-family: "coolvetica";
 }
 
-.mb-20 {
-  margin-bottom: 20px;
+.mt-18 {
+  margin-top: 18px;
+}
+
+.mb-18 {
+  margin-bottom: 18px;
 }
 
 .mb-35 {
@@ -1146,7 +1150,45 @@ main > section:nth-child(odd) {
   color: #fff;
 }
 
+.other-main .container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .other-main h2 {
   margin: 50px 0;
   font-size: 2em;
+}
+
+.other-main h3 {
+  border-color: #ff901f;
+  margin: 25px 0;
+}
+
+.projet-text {
+  margin-left: 35px;
+}
+
+.projet-list {
+  list-style-type: disclosure-closed;
+}
+
+.projet-list li:not(:first-child) {
+  margin-top: 6px;
+}
+
+.projet-link {
+  color: #e6b9f7;
+  text-decoration: none;
+}
+
+.projet-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.other-main iframe {
+  align-self: center;
+  margin-top: 35px;
 }
